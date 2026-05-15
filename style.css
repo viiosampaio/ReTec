@@ -1,0 +1,145 @@
+:root {
+    --bg-color: #94a38e; /* Cor verde musgo do fundo do template */
+    --header-green: #32cd32;
+    --brush-green: #1a5c1a;
+    --text-color: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--header-green);
+    padding: 20px;
+    border-bottom: 2px solid #228b22;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Seção de Introdução */
+.intro-section {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.highlight-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.rounded-img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Categorias com pincelada */
+.categories-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.category-item {
+    background-color: var(--brush-green);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 50% 20% 50% 20%; /* Simula formato irregular da pincelada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    cursor: default;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+/* Mapa */
+.map-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+    }
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}

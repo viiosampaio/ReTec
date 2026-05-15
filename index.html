@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReTec - Reciclagem Tecnológica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">♻️</div>
+                <h1>ReTec - RECICLAGEM TECNOLÓGICA</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="intro-text">
+                <h2>O que é lixo eletrônico e porque reciclar?</h2>
+                <p>Segundo a Green Eletron (2020), o lixo eletrônico é também conhecido como e-lixo ou resíduos de equipamento eletrônico (REEE), eles estão se referindo aos produtos eletrônicos quebrados, danificados ou sem utilidade por algum motivo, além de pilhas descarregadas que precisam ser descartados. E devem ser descartados da forma correta, pois podem ser reciclados.</p>
+                <p>Normalmente, os componentes dos aparelhos são feitos de plástico, vidro, metais, entre outros. Quando ocorre o processo de reciclagem, os resíduos eletrônicos são desmontados e as partes transformadas em matéria-prima para a indústria. Vale ressaltar que o desmonte dos aparelhos deve ser feita com segurança, por profissionais qualificados, jamais feitos em casa.</p>
+                
+                <div class="highlight-box">
+                    <h3>Por que é importante?</h3>
+                    <p>Aparelhos como celulares e computadores contêm metais pesados (chumbo, mercúrio, cádmio) que são tóxicos. Ao reciclar, evitamos a contaminação e recuperamos metais preciosos como ouro e prata para novos produtos.</p>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Reciclagem de lixo eletrônico" class="rounded-img">
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <h2>Tipos de lixo eletrônico:</h2>
+            <div class="categories-grid">
+                <div class="category-item">EQUIPAMENTO DE INFORMÁTICA</div>
+                <div class="category-item">ACESSÓRIOS</div>
+                <div class="category-item">DISPOSITIVOS MÓVEIS</div>
+                <div class="category-item">PILHAS E BATERIAS</div>
+                <div class="category-item">ELETRODOMÉSTICOS</div>
+                <div class="category-item">LÂMPADAS</div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Pontos de coleta em Sorocaba</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Todos os direitos reservados</p>
+        <p>Feito por Vitória O. Sampaio</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>k
